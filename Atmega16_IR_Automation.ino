@@ -1,28 +1,24 @@
+// IR Remote Automation Version 0.1
+// Made by Muhammed Fasil K
+// Ir library by shirriff-https://github.com/z3t0/Arduino-IRremote
 #include <IRremote.h>
- 
 int RECV_PIN = 13; // the pin where you connect the output pin of TSOP4838
-int led1 = 23;
-int led2 = 22;
-int led3 = 21;
-int led4 = 20;
-int led5 = 19;
-int itsONled[] = {0,0,0,0,0,0};
-/* the initial state of LEDs is OFF (zero) 
-the first zero must remain zero but you can 
-change the others to 1's if you want a certain
-led to light when the board is powered */
+int led1 = 23; // Pin were devices can be connected
+int led2 = 22; // Pin were devices can be connected
+int led3 = 21; // Pin were devices can be connected
+int led4 = 20; // Pin were devices can be connected
+int led5 = 19; // Pin were devices can be connected
+int itsONled[] = {0,0,0,0,0,0}; // Setting the initial condition of LED Off
 #define code1  33444015 // code received from button A
 #define code2  33478695 // code received from button B
 #define code3  33486855 // code received from button C
-#define code4  33435855 
-#define code5  33468495
+#define code4  33435855 // code received from button D
+#define code5  33468495 // code received from button E
 IRrecv irrecv(RECV_PIN);
- 
 decode_results results;
- 
 void setup()
 {
-  Serial.begin(9600);   // you can comment this line
+  Serial.begin(9600);   // Can delete this line if serial communication is not needed
   irrecv.enableIRIn();  // Start the receiver
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
@@ -82,7 +78,7 @@ void loop() {
           break;
                     
     }
-    Serial.println(value); // you can comment this line
+    Serial.println(value); // Can delete this line if serial communication is not needed
     irrecv.resume(); // Receive the next value
   }
 }
