@@ -1,5 +1,5 @@
 // IR Remote Automation Version 0.1
-// Made by Muhammed Fasil K
+// Made by Muhammed Fasil K-https://github.com/mhdfasilwyd/Arduino_Projects
 // Ir library by shirriff-https://github.com/z3t0/Arduino-IRremote
 #include <IRremote.h>
 int RECV_PIN = 13; // the pin where you connect the output pin of TSOP4838
