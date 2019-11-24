@@ -1,6 +1,6 @@
 # Arduino_Projects
 Arduino projects with Official and Unofficial boards.
 
-Visit My Official Website For Latest Tutorials and Guides
+Visit My Website For Latest Tutorials and Guides
 
-https://www.pcweek.in
+https://bloginoobs.blogspot.com
