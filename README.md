@@ -3,4 +3,4 @@ Arduino projects with Official and Unofficial boards.
 
 Visit My Website For Latest Tutorials and Guides
 
-https://bloginoobs.blogspot.com
+https://bloginoobs.blogspot.com/p/electronics.html
