@@ -19,10 +19,10 @@ IPAddress staticIP(192, 168, 43, 90);
 IPAddress gateway(192, 168, 43, 1);   
 IPAddress subnet(255, 255, 255, 0);  
 IPAddress dns(8, 8, 8, 8);  //DNS
-const char* deviceName = "pcweek";
+const char* deviceName = "Wilamp_V1";
 #define LED 2  
-const char* ssid = "pcweek";
-const char* password = "wilamp123";
+const char* ssid = "wilamp";
+const char* password = "12345678";
 ESP8266WebServer server(80); 
 void handleRoot() 
 {
