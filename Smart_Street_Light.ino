@@ -1,3 +1,6 @@
+// Smart Street Light Version 0.1
+// Made by Muhammed Fasil K-https://github.com/mhdfasilwyd/Arduino_Projects
+
 #define ldrPin A0
 #define dstPin 12
 #define ledPin 10
