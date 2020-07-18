@@ -1,6 +1,7 @@
-#define ldrpin A0
-#define dstpin 12
-#define ledpin 10
+#define ldrPin A0
+#define dstPin 12
+#define ledPin 10
+#define MIN_VALUE 700 // Change This Value According to Your LDR Value
 int light=0;
 int dist=0;
 void setup() 
@@ -14,16 +15,20 @@ void loop()
 {
   light=analogRead(ldrpin);
   dist=digitalRead(dstpin);
-  if(light<700)
+  
+  if(light < MIN_VALUE)
   { 
-    analogWrite(ledpin,128);
-    if(dist==HIGH)
+    if(dist == HIGH)
     {
       analogWrite(ledpin,255);
     }
-   else
-   {
-    analogWrite(ledpin,0);
+    else
+    {
+      analogWrite(ledpin,128);
     }
+  }
+  else
+  {
+    analogWrite(ledpin,0);
   }
 }
