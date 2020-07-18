@@ -7,6 +7,7 @@
 #define MIN_VALUE 700 // Change This Value According to Your LDR Value
 int light=0;
 int dist=0;
+
 void setup() 
 {
   pinMode(A0,INPUT);
