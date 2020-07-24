@@ -24,18 +24,14 @@ void loop()
     switch(value) 
     {
       case CODE_A:
-      { 
-        LED_PWM = LED_PWM + 5;      
-        analogWrite(LED_PIN,LED_PWM);             
-      } 
-    break; 
+      LED_PWM += 5;      
+      analogWrite(LED_PIN,LED_PWM);             
+      break; 
       case CODE_B:
-      {
-        LED_PWM = LED_PWM - 5;     
-        analogWrite(LED_PIN,LED_PWM);
-      } 
-    break;           
+      LED_PWM -= 5;     
+      analogWrite(LED_PIN,LED_PWM);
+      break;           
     }
-  irrecv.resume(); 
+    irrecv.resume(); 
   }
 }
