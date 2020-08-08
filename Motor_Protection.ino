@@ -19,7 +19,7 @@ void setup()
   pinMode(INPUT_MOT, INPUT);
   pinMode(INPUT_SENSOR, INPUT);
   pinMode(INPUT_INC, INPUT);
-  pinMode(INPUT_DEC, OUTPUT);
+  pinMode(INPUT_DEC, INPUT);
   pinMode(INPUT_REL, INPUT);
   pinMode(OUTPUT_MOT, OUTPUT);
   pinMode(OUTPUT_BUZ, OUTPUT);
@@ -94,7 +94,7 @@ void checkSensor(void)
 
   relState = digitalRead(INPUT_REL); // Relay Pin
   
-  if(relState == HIGH)
+  if(relState == LOW)
   {
     digitalWrite(OUTPUT_MOT,LOW);
     digitalWrite(OUTPUT_BUZ,HIGH);
